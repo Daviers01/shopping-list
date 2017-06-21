@@ -6,8 +6,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-button, input[type="text"] {
+button, input[type="text"], input[type="number"] {
   padding: 5px;
+}
+
+input[type="number"] {
+  width: 100px;
 }
 
 button:hover {
@@ -21,9 +25,12 @@ button:hover {
 .container {
   max-width: 600px;
   margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .shopping-list {
+  text-align: left;
   list-style: none;
   padding-left: 0;
 }
@@ -35,13 +42,21 @@ button:hover {
 }
 
 .shopping-item {
-  display: block;
+  display: inline-block;
   color: grey;
   font-style: italic;
   font-size: 20px;
   margin-bottom: 15px;
 }
 
+.count {
+  float: right;
+}
+
 .shopping-item__checked {
   text-decoration: line-through;
+}
+
+.required {
+  border: 2px solid red;
 }
